@@ -27,7 +27,8 @@ module Mongoid #:nodoc:
       def build(attributes = nil)
         load_target
         name = @parent.class.to_s.underscore
-        object = @klass.instantiate((attributes || {}).merge(name => @parent))
+        object = @klass.instantiate(attributes || {})
+        object.send("#{name}=", @parent)
         @target << object
         object
       end

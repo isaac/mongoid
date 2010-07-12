@@ -2,7 +2,8 @@
 # Use `bundle exec rake` in order to run the specs using the bundle
 source "http://gemcutter.org"
 
-gem "activemodel", "~>3.0.0.beta"
+# MassAssignmentSecurity is in AMo as of 4b66aab0
+gem "activemodel", ">= 3.0.0.beta4", :git => "git://github.com/rails/rails"
 gem "tzinfo", "~>0.3.22"
 gem "will_paginate", "~>3.0.pre"
 gem "mongo", "~> 1.0.3"
