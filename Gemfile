@@ -3,7 +3,7 @@
 source "http://gemcutter.org"
 
 # MassAssignmentSecurity is in AMo as of 4b66aab0
-gem "activemodel", ">= 3.0.0.beta4", :git => "git://github.com/rails/rails"
+gem "activemodel", :git => "git://github.com/rails/rails.git"
 gem "tzinfo", "~>0.3.22"
 gem "will_paginate", "~>3.0.pre"
 gem "mongo", "~> 1.0.3"
